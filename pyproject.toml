@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "discord-ext-menus-stubs"
+version = "1.0.0-a"
+description = "Type stubs for the menus extension for discord.py"
+authors = ["StockerMC"]
+license = "MIT"
+packages = [{ include = "discord-stubs/ext/menus/__init__.pyi" }]
+
+[tool.poetry.dependencies]
+python = "^3.5.3"
+
+[tool.poetry.dev-dependencies]
+"discord.py" = "1.7.3"
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
